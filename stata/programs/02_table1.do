@@ -6,7 +6,7 @@ local pwd : pwd
 global basepath "`pwd'/.."      // change this for your specific system
 global outputdata "$basepath/data/outputdata" // this is where you would write the data you create in this project
 global results "$basepath/text/tables"       // All tables for inclusion in your paper go here
-global dtam  "$outputdata/pumsak.dta"  /* Stata PUMS merged data */
+global dtam  "$outputdata\pumsak.dta"  /* Stata PUMS merged data */
 
 clear
 use  "$dtam", clear  /* load merged data */
