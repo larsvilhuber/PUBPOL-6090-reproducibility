@@ -16,6 +16,6 @@ pumsak <- read_dta(dtam) %>%
   
   # output the table to latex 
 
-sink(file=file.path(results,"freq_specific_ak.tex"))
+sink(file="..\tables\freq_specific_ak.tex")
 table %>% kable(format="latex")
 sink()

@@ -17,6 +17,8 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
 Type 'q()' to quit R.
 
+[Previously saved workspace restored]
+
 > # run all programs from beginning to end 
 > 
 > 
@@ -86,10 +88,11 @@ The following objects are masked from 'package:base':
 +     wt = pweight_num) %>% mutate(Tribes = factor(specific_ak, 
 +     labels = c("Not ide ..." ... [TRUNCATED] 
 
-> sink(file = file.path(results, "freq_specific_ak.tex"))
-> 
-> 
-> 
-> proc.time()
-   user  system elapsed 
-   0.62    0.39    0.96 
+> sink(file = "..\tables\freq_specific_ak.tex")
+Error in file(file, if (append) "a" else "w") : 
+  cannot open the connection
+Calls: source -> withVisible -> eval -> eval -> sink -> file
+In addition: Warning message:
+In file(file, if (append) "a" else "w") :
+  cannot open file '..	ablesreq_specific_ak.tex': Invalid argument
+Execution halted
